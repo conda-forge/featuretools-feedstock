@@ -16,7 +16,7 @@ build:
 requirements:
   host:
     - pip
-    - pytest-runner >=4.2
+    - pytest-runner ==4.2
     - python
   run:
     - botocore >=1.12.51
