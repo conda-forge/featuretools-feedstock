@@ -37,7 +37,6 @@ test:
   commands:
     - featuretools --help
     - featuretools info --help
-    - featuretools install --help
     - featuretools list-primitives
     - pytest featuretools/tests
   imports:
