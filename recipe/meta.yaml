@@ -1,12 +1,12 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.0rc1" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/b0/bc/f9749dbc6d523c9cd7ccfc42b55d9b5abec257a53dad43039d061c176ebd/featuretools-0.7.0.tar.gz
-  sha256: ffdc476198ce0ca89d9282820c93b22c994e34865520dc588ba4afdada813731
+  url: https://test-files.pythonhosted.org/packages/cb/c8/fc6d1e99700056e1e98069d44418e0e05082c570e4b62a88b383061367b8/featuretools-0.7.0rc1.tar.gz
+  sha256: c005a1eb9f2448591d06226c88fff765eab077fb40e2a7e1659fb95d41d61c92
 
 build:
   noarch: python
@@ -19,8 +19,6 @@ requirements:
     - pytest-runner ==4.2
     - python
   run:
-    - botocore >=1.12.51
-    - boto3 >=1.9.51
     - click >=7.0.0
     - cloudpickle >=0.4.0
     - dask >=1.1.0
@@ -32,7 +30,6 @@ requirements:
     - python
     - pyyaml >=3.12
     - scikit-learn >=0.20.0
-    - smart_open >=1.7.1
     - toolz >=0.8.2
     - tqdm >=4.19.2
 
@@ -52,7 +49,6 @@ test:
     - pytest >=4.1.*,<4.2
     - pytest-xdist >=1.26.1
     - python-graphviz >=0.8.4
-    - s3fs >=0.1.5
   source_files:
     - featuretools/*
 
