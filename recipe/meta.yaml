@@ -51,7 +51,9 @@ test:
     - pytest >=4.1.*,<4.2
     - pytest-xdist >=1.26.1
     - python-graphviz >=0.8.4  # [not win]
-    - python-graphviz ==0.8.4  # [win]
+    - python-graphviz =0.8.4=py27_1002  # [win and py2k]
+    - python-graphviz =0.8.4=py36_1002  # [win and py==36]
+    - python-graphviz =0.8.4=py37_1002  # [win and py==37]
   source_files:
     - featuretools/*
 
