@@ -1,12 +1,12 @@
-{% set version = "0.8.0rc2" %}
+{% set version = "0.8.0rc3" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/5f/84/0f56f49de404e10b8f27b858cb9f8bb51a90a157688b3b1d681711d7e156/featuretools-0.8.0rc2.tar.gz
-  sha256: e0b30258bc5d7da8ec497287c711d67fd2fe1d3fdbca9e7358958975ed6a3870
+  url: https://test-files.pythonhosted.org/packages/4f/da/76c417cb82528701a848ecd3504f68d328e1af5138ed8d814b87d5c6956e/featuretools-0.8.0rc3.tar.gz
+  sha256: 27c3a869903064c04e1ea1bc2fdedfe1477e10649c537e43deb794b69d8d101b
 
 build:
   skip: True # [py==34]
