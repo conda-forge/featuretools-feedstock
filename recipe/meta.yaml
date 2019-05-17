@@ -9,9 +9,10 @@ source:
   sha256: 27c3a869903064c04e1ea1bc2fdedfe1477e10649c537e43deb794b69d8d101b
 
 build:
-  skip: True # [py==34]
   entry_points:
     - featuretools = featuretools.__main__:cli
+  skip: True  # [py2k]
+  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -25,15 +26,13 @@ requirements:
     - cloudpickle >=0.4.0
     - dask >=1.1.0
     - distributed >=1.24.2
-    - funcsigs >=1.0.2  # [py2k]
     - future >=0.16.0
     - numpy >=1.13.3
     - pandas >=0.23.*
     - psutil >=5.4.8
     - python
     - pyyaml >=3.12
-    - scikit-learn >=0.20.*,<0.21 # [py2k]
-    - scikit-learn >=0.20.* # [py3k]
+    - scikit-learn >=0.20.*
     - toolz >=0.8.2
     - tqdm >=4.19.2
 
