@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/f6/8d/3386b923a2b1a12b63aaadd35ab894509371195110c758e6c3edf0d1fd97/featuretools-0.10.1rc1.tar.gz
-  sha256: ee42a5a7ab0a2c7eced411a1fa0955b0c7a5b612fdf7f92b764620f22c6d1838
+  url: https://test-files.pythonhosted.org/packages/42/57/67fbda72f4558e1a082e62949762661b4571231617e255c0db75f0c4d075/featuretools-0.11.0rc1.tar.gz
+  sha256: 8615afea37b14e91a429fc424796d0324156603a6dbdde936e3e09b2b3e822ac
 
 build:
   entry_points:
