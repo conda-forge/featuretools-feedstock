@@ -1,12 +1,12 @@
-{% set version = "0.11.0rc1" %}
+{% set version = "0.11.0rc2" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/42/57/67fbda72f4558e1a082e62949762661b4571231617e255c0db75f0c4d075/featuretools-0.11.0rc1.tar.gz
-  sha256: 8615afea37b14e91a429fc424796d0324156603a6dbdde936e3e09b2b3e822ac
+  url: https://test-files.pythonhosted.org/packages/1e/d8/7c1af0e946316783c63a8947ff053b4a91bd88f14598a39db665e23c38cf/featuretools-0.11.0rc2.tar.gz
+  sha256: 76e9daecfa04fe4aa4bea3e9b9e21b83bca056fe9de13c2748d59f04e42a1576
 
 build:
   entry_points:
