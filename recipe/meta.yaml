@@ -9,7 +9,6 @@ source:
   sha256: 3631db16794f49c34cffd8fbe688c29497f24a3c79232f7bcc532865b2740eca
 
 build:
-  skip: True  # [py2k]
   entry_points:
     - featuretools = featuretools.__main__:cli
   noarch: python
@@ -19,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5.*
   run:
     - click >=7.0.0
     - cloudpickle >=0.4.0
@@ -28,7 +27,7 @@ requirements:
     - numpy >=1.13.3
     - pandas >=0.23.*
     - psutil >=5.4.8
-    - python
+    - python >=3.5.*
     - pyyaml >=3.12
     - scikit-learn >=0.20.0
     - smart_open >=1.8.4
