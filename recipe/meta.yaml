@@ -1,12 +1,12 @@
-{% set version = "0.12.0.dev0" %}
+{% set version = "0.12.0.dev1" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/94/3d/5a04b21eba971d8687901d7739c584d620a8c8fd602d2363c5efa4466c6c/featuretools-0.12.0.dev0.tar.gz
-  sha256: 3631db16794f49c34cffd8fbe688c29497f24a3c79232f7bcc532865b2740eca
+  url: https://test-files.pythonhosted.org/packages/66/2d/1636a6a5ba0c5b9f3531325b06a507332c40a3d2dd154903ace9937d8bba/featuretools-0.12.0.dev1.tar.gz
+  sha256: 6372e9fcc8ab2a528e77cdacd1afd84780dc50c6a4426febd5dd3de185cca858
 
 build:
   entry_points:
@@ -25,11 +25,12 @@ requirements:
     - dask >=1.1.0
     - distributed >=1.24.2
     - numpy >=1.13.3
-    - pandas >=0.23.*
+    - pandas >=0.24.1
     - psutil >=5.4.8
     - python >=3.5.*
     - pyyaml >=3.12
     - scikit-learn >=0.20.0
+    - scipy >=0.13.3
     - smart_open >=1.8.4
     - s3fs >=0.2.2
     - tqdm >=4.32.0
