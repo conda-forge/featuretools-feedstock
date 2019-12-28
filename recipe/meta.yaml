@@ -1,12 +1,12 @@
-{% set version = "0.13.0" %}
+{% set version = "0.13.1.dev0" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: 102f9185e731bcb14b988dd29409fc8c7fdecc4eb4c4fb1719357c36de6ba415
+  url: https://test-files.pythonhosted.org/packages/0b/25/63975d536858c871abfafeda71058c09aeae2e756c0493a3739e0bce3c15/featuretools-0.13.1.dev0.tar.gz
+  sha256: 907568cec9aea68b1f844ce2641fc8f47c896fc150c9aefc6365cceb2bd00bcb
 
 build:
   entry_points:
@@ -49,6 +49,7 @@ test:
     - python-graphviz >=0.8.4
     - smart_open >=1.8.4
     - s3fs >=0.2.2
+    - boto3 >=1.10.45
   source_files:
     - featuretools/*
 
