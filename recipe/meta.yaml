@@ -1,12 +1,12 @@
-{% set version = "0.13.1" %}
+{% set version = "0.13.2.dev0" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: c13231428cedd864a01aca96c19eda441a297bf2c494522bff519ac4b5cedb60
+  url: https://test-files.pythonhosted.org/packages/0c/65/9dae2481f84729f575297dd2e79e79bfb4f7305e7cf81e84c65db06cf142/featuretools-0.13.2.dev0.tar.gz
+  sha256: 099cc8f14a57d07a8d25bb88075641592e5919ba7732671a8521089df31deab4
 
 build:
   entry_points:
@@ -29,7 +29,6 @@ requirements:
     - psutil >=5.4.8
     - python >=3.5.*
     - pyyaml >=3.12
-    - scikit-learn >=0.20.0
     - scipy >=0.13.3
     - tqdm >=4.32.0
 
@@ -49,7 +48,6 @@ test:
     - pytest >=5.2.*
     - python-graphviz >=0.8.4
     - smart_open >=1.8.4
-    - s3fs >=0.2.2
   source_files:
     - featuretools/*
 
