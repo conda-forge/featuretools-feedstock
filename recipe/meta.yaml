@@ -1,12 +1,12 @@
-{% set version = "0.13.2" %}
+{% set version = "0.13.3.dev0" %}
 
 package:
   name: featuretools
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: 7422f2dfcca43d7dbdba36df1edec46df50af2858412565e2db98774f34f5d6c
+  url: https://test-files.pythonhosted.org/packages/3a/d7/8600d5ffa72d6890344df0811e8431465bcf15f2a9eade143ee34f67c1c4/featuretools-0.13.3.dev0.tar.gz
+  sha256: e9c3b4fe4aa40a4606dc3d72c65b4dc3ed03014229d4f225d5e8ce0a727d4462
 
 build:
   entry_points:
