@@ -51,6 +51,7 @@ test:
     - python-graphviz >=0.8.4
     - smart_open >=5.0.*
     - urllib3 >=1.26.4
+    - pyarrow >=3.0.0
   source_files:
     - featuretools/*
 
