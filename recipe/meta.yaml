@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
+  url: https://test-files.pythonhosted.org/packages/4b/4f/20a94a768e80c2bde63febf166f3c45949b02206a0de6ebfb75095796845/featuretools-0.24.1.dev0.tar.gz
   sha256: fa0b444055f8bb4046d79823f4b0226b740cbc1ad1016b2ca80c35138168ec29
 
 build:
