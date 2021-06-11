@@ -37,7 +37,7 @@ test:
     - featuretools --help
     - featuretools info
     - featuretools list-primitives
-    - pytest --pyargs featuretools
+    - pytest --pyargs featuretools -k "not test_saving_png_file"
   imports:
     - featuretools
   requires:
