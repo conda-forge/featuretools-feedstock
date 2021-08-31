@@ -44,13 +44,14 @@ test:
     - boto3 >=1.17.46
     - composeml >=0.3.0
     - fastparquet==0.5.0
+    - graphviz !=2.47.2
     - moto >=1.3.15
     - pip >=21.1.2
     - pympler >=0.8
     - pytest >=5.2.*
     - python-graphviz >=0.8.4
     - smart_open >=5.0.*
-    - urllib3 >=1.26.4
+    - urllib3 >=1.26.5
     - pyarrow >=3.0.0
   source_files:
     - featuretools/*
@@ -66,5 +67,10 @@ about:
 
 extra:
   recipe-maintainers:
-    - gsheni
+    - tuethan1999
     - rwedge
+    - tamargrey
+    - davesque
+    - thehomebrewnerd
+    - jeff-hernandez
+    - gsheni
