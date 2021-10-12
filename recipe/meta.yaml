@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://test-files.pythonhosted.org/packages/ab/4e/f215c53d4486230d6415f15dc78681b7578ec2cf13e0dbc21596a0eff693/featuretools-1.0.0.dev2.tar.gz
-  sha256: 33c5953df7d4f5fb37f06b1a52f03f3530e30fe39c9470b8f29685cb5c17a229
+  sha256: aee6264d1cad6022cf0674dffae3fc92c63a2eb6f6c92e0f5f605fc209d05a4b
 
 build:
   entry_points:
