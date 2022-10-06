@@ -159,6 +159,7 @@ Feedstock Maintainers
 * [@ozzieD](https://github.com/ozzieD/)
 * [@rwedge](https://github.com/rwedge/)
 * [@sbadithe](https://github.com/sbadithe/)
+* [@stefaniesmith](https://github.com/stefaniesmith/)
 * [@tamargrey](https://github.com/tamargrey/)
 * [@thehomebrewnerd](https://github.com/thehomebrewnerd/)
 
