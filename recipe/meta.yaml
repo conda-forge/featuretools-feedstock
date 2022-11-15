@@ -9,8 +9,6 @@ source:
   sha256: c99303c1948ef058ffea25d0fcc7080aaeaa1e13ae2f57d0adfb9471501d69b9
 
 build:
-  entry_points:
-    - featuretools = featuretools.__main__:cli
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -34,9 +32,6 @@ requirements:
     - woodwork >=0.18.0
 test:
   commands:
-    - featuretools --help
-    - featuretools info
-    - featuretools list-primitives
     - pytest -n 2 --pyargs featuretools
   imports:
     - featuretools
