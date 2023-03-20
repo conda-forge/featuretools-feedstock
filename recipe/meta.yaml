@@ -52,6 +52,9 @@ test:
     - urllib3 >=1.26.5
   source_files:
     - featuretools/*
+    - pyproject.toml
+    - LICENSE
+    - README.md
 
 about:
   doc_url: https://featuretools.alteryx.com
