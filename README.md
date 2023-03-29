@@ -1,11 +1,12 @@
-About featuretools
-==================
+About featuretools-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/featuretools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.featuretools.com
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/featuretools-feedstock/blob/main/LICENSE.txt)
 
 Summary: a framework for automated feature engineering
 
