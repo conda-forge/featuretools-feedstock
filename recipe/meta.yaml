@@ -1,4 +1,4 @@
-{% set version = "1.23.0" %}
+{% set version = "1.24.0" %}
 
 package:
   name: featuretools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: c6acc78eac466f49c2e79908078c45b1baba286943ee3227a11c05622c18411a
+  sha256: df8fa4ff7e48589a855510083b7c5e62da105560818606030aeec4cac4e8d026
 
 build:
   noarch: python
@@ -52,6 +52,9 @@ test:
     - urllib3 >=1.26.5
   source_files:
     - featuretools/*
+    - pyproject.toml
+    - LICENSE
+    - README.md
 
 about:
   doc_url: https://featuretools.alteryx.com
