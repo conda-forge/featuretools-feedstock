@@ -7,7 +7,6 @@ Home: https://www.featuretools.com
 
 Package license: BSD-3-Clause
 
-
 Summary: a framework for automated feature engineering
 
 Development: https://github.com/alteryx/Featuretools
