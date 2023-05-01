@@ -1,4 +1,4 @@
-{% set version = "1.25.0" %}
+{% set version = "1.26.0" %}
 
 package:
   name: featuretools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: 680a28b854fbc0448a2f14ae92939aee8c0147dbccf34be31c38907a7b38b261
+  sha256: 7c37edd6ab66f5eab4e4f064b35d775d8544a81998188bac2ab15c4471e68956
 
 build:
   noarch: python
@@ -19,8 +19,6 @@ requirements:
     - python >=3.8.*, <3.11.0
   run:
     - cloudpickle >=1.5.0
-    - dask >=2022.11.1
-    - distributed !=2022.11.1
     - holidays >=0.13
     - numpy >=1.21.0
     - packaging >=20.0
