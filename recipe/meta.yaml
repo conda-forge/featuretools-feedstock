@@ -1,4 +1,4 @@
-{% set version = "1.26.0" %}
+{% set version = "1.27.0" %}
 
 package:
   name: featuretools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: 7c37edd6ab66f5eab4e4f064b35d775d8544a81998188bac2ab15c4471e68956
+  sha256: ab3b2f786652b65ea6ef84062300f29351e8e06d8fb1cd29fdd08cc129ce04b2
 
 build:
   noarch: python
@@ -16,16 +16,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8.*, <3.11.0
+    - python >=3.8.*
   run:
     - cloudpickle >=1.5.0
     - holidays >=0.13
     - numpy >=1.21.0
     - packaging >=20.0
-    - pandas >=1.4.0, <2.0.0
+    - pandas >=1.5.0
     - psutil >=5.6.6
-    - python >=3.8.*, <3.11.0
-    - scipy >=1.4.0
+    - python >=3.8.*
+    - scipy >=1.10.0
     - tqdm >=4.32.0
     - woodwork >=0.23.0
 test:
