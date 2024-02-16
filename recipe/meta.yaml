@@ -1,4 +1,4 @@
-{% set version = "1.28.0" %}
+{% set version = "1.29.0" %}
 
 package:
   name: featuretools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: 33612eb1528a55ce4700f0c420c7775f4ff0533d5f256251ad6c07a17787f774
+  sha256: c7123ab7dc260e7380c61ae6cc1e831e13177b8a9e61ae628e43a1e212f61590
 
 build:
   noarch: python
