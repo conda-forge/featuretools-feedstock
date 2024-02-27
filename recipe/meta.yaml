@@ -1,4 +1,4 @@
-{% set version = "1.29.0" %}
+{% set version = "1.30.0" %}
 
 package:
   name: featuretools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: c7123ab7dc260e7380c61ae6cc1e831e13177b8a9e61ae628e43a1e212f61590
+  sha256: 57833bd432b9a2784546bbfd35ffbd7b761557bdb84006e4068086bf41c9366e
 
 build:
   noarch: python
@@ -20,21 +20,21 @@ requirements:
   run:
     - cloudpickle >=1.5.0
     - holidays >=0.17
-    - numpy >=1.21.0
+    - numpy >=1.25.0
     - packaging >=20.0
-    - pandas >=1.5.0
-    - psutil >=5.6.6
+    - pandas >=2.0.0
+    - psutil >=5.7.0
     - python >=3.9.*
     - scipy >=1.10.0
     - tqdm >=4.32.0
-    - woodwork >=0.23.0
+    - woodwork >=0.28.0
 test:
   commands:
     - pytest -n 2 --pyargs featuretools
   imports:
     - featuretools
   requires:
-    - boto3 >=1.34.32 
+    - boto3 >=1.34.32
     - composeml >=0.8.0
     - graphviz !=2.47.2
     - moto >=5.0.0
