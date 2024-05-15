@@ -1,4 +1,4 @@
-{% set version = "1.30.0" %}
+{% set version = "1.31.0" %}
 
 package:
   name: featuretools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
-  sha256: 57833bd432b9a2784546bbfd35ffbd7b761557bdb84006e4068086bf41c9366e
+  sha256: 01bfb17fcc1715b4c3623c7bc94a8982122c4a0fa03350ed478601bb81f90155
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - psutil >=5.7.0
     - python >=3.9.*
     - scipy >=1.10.0
-    - tqdm >=4.32.0
+    - tqdm >=4.66.3
     - woodwork >=0.28.0
 test:
   commands:
@@ -48,6 +48,8 @@ test:
     - python-graphviz >=0.8.4
     - smart_open >=5.0.0
     - urllib3 >=1.26.18
+    - dask >= 2023.2.0
+    - distributed >= 2023.2.0
   source_files:
     - featuretools/*
     - pyproject.toml
@@ -72,7 +74,6 @@ extra:
     - stefaniesmith
     - sbadithe
     - machineAYX
-    - tamargrey
     - thehomebrewnerd
     - jeff-hernandez
     - dvreed77
