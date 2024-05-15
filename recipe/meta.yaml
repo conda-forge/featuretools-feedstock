@@ -26,7 +26,7 @@ requirements:
     - psutil >=5.7.0
     - python >=3.9.*
     - scipy >=1.10.0
-    - tqdm >=4.32.0
+    - tqdm >=4.66.3
     - woodwork >=0.28.0
 test:
   commands:
@@ -72,7 +72,6 @@ extra:
     - stefaniesmith
     - sbadithe
     - machineAYX
-    - tamargrey
     - thehomebrewnerd
     - jeff-hernandez
     - dvreed77
