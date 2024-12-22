@@ -5,18 +5,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/f/featuretools/featuretools-{{ version }}.tar.gz
   sha256: 01bfb17fcc1715b4c3623c7bc94a8982122c4a0fa03350ed478601bb81f90155
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9.*
+    - python {{ python_min }}
   run:
     - cloudpickle >=1.5.0
     - holidays >=0.17
@@ -24,7 +24,7 @@ requirements:
     - packaging >=20.0
     - pandas >=2.0.0
     - psutil >=5.7.0
-    - python >=3.9.*
+    - python >={{ python_min }}
     - scipy >=1.10.0
     - tqdm >=4.66.3
     - woodwork >=0.28.0
@@ -50,6 +50,7 @@ test:
     - urllib3 >=1.26.18
     - dask >= 2023.2.0
     - distributed >= 2023.2.0
+    - python {{ python_min }}
   source_files:
     - featuretools/*
     - pyproject.toml
